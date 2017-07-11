@@ -5,10 +5,10 @@ $(document).ready( function(){
 	renderHighlightedRecipes(recipesArray);
 
 //funcion que inserta contenido especificado al final de los elementos seleccionados
-	function printNews(el){
- 		$("#nuevo-titulo").append('<h4>NUEVAS RECETAS</h4>');
- 	}
- 	printNews();
+function printNews(el){
+	$("#nuevo-titulo").append('<h4>NUEVAS RECETAS</h4>');
+}
+printNews();
 
 });
 
@@ -19,6 +19,10 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	 //llama a la función proporcionada en orden una vez para cada elemento 
+	recipesArray.forEach(function(elelemnto){		
+		console.log(elemento.highlighted);		
+	});	
 }
 
 /*
