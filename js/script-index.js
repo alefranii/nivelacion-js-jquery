@@ -20,7 +20,7 @@ printNews();
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
 	 //llama a la función proporcionada en orden una vez para cada elemento 
-	recipesArray.forEach(function(elelemnto){		
+	recipesArray.forEach(function(elemento){		
 		console.log(elemento.highlighted);		
 	});	
 }
